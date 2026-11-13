@@ -24,8 +24,10 @@ Antes de empezar lee `docs/01-investigacion-nicho.md` (nicho y palabras clave) y
 ### 1. Tema — gratis
 - Si no hay tema, usa la skill **yt-plan** con `contenido/registro.csv` (lo ya publicado) y la lista de
   situaciones de `docs/01-investigacion-nicho.md` para proponer las 3 siguientes.
-- Para ver qué funciona en una situación concreta, usa la skill **yt-viral** (yt-dlp sobre los canales de
-  referencia del informe → `swipe.py`). Guarda los 5-10 mejores títulos en `contenido/<ep>/competencia.txt`.
+- Para ver qué funciona, usa la skill **yt-viral**: `yt-dlp --flat-playlist -J --playlist-end 20
+  "https://www.youtube.com/@<handle>/videos"` sobre 3-6 canales de referencia (los handles están en
+  `docs/01-investigacion-nicho.md`), conviértelos a `collected.json` (`channel,title,views,url,duration`) y
+  ejecuta `python3 .claude/skills/yt-viral/swipe.py collected.json --min 2.0`. Guarda los 5-10 mejores títulos en `contenido/<ep>/competencia.txt`.
 - 💳 Opcional, ~5 créditos: `vidiq_keyword_research` (mode `matching_terms`, language `es`) **solo** si hace
   falta comparar volumen de búsqueda entre dos palabras clave. Es el único dato que no podemos sacar gratis.
 
@@ -41,18 +43,19 @@ Antes de empezar lee `docs/01-investigacion-nicho.md` (nicho y palabras clave) y
 Muestra el guion y pide al usuario que lo revise y corrija. No sigas hasta que lo apruebe; anota quién y
 cuándo en la cabecera.
 
-### 4. Voces
-Divide el guion en escenas: una escena = una línea hablada por una sola voz. Guarda los audios en
-`audio/NNN.mp3`.
-- **Gratis (pendiente de probar en este entorno):** `edge-tts` (voces neuronales de Microsoft, sin clave),
-  p. ej. `es-MX-DaliaNeural` para la narradora y `en-US-JennyNeural` / `en-US-GuyNeural` para los
-  personajes. Hay que instalarlo con pip; pide permiso al usuario la primera vez.
-- 💳 **vidIQ, si lo gratis no suena bien:** `vidiq_voiceover_list_voices` → `vidiq_voiceover_generate`
-  (≤ 5000 caracteres por llamada; 28 créditos por cada 1000 caracteres, ≈ 500-620 por un vídeo de 25 min)
-  → `vidiq_job_poll` → `curl -sSL -o audio/NNN.mp3 <audioUrl>`.
-- Guarda las voces elegidas en `contenido/voces.json` y úsalas siempre (son la "voz" del canal).
+### 4. Voces — gratis (Piper, sin conexión)
+- La primera vez en una máquina nueva: `bash .claude/skills/video-ingles/scripts/preparar.sh` (instala Piper y
+  yt-dlp y descarga las voces a `.cache/piper/`, ~250 MB).
+- Las voces del canal están en `contenido/voces.json`: `narradora` (español de México), `en_a` / `en_lenta`
+  (inglés EE. UU., femenina) y `en_b` / `en_b_lenta` (masculina). `_lenta` = 35 % más despacio, para repetir.
+  Úsalas siempre: son la "voz" reconocible del canal.
+- Divide el guion en `lineas.tsv` (`archivo<TAB>voz<TAB>texto`, una línea por frase de una sola voz) y genera:
+  `python3 .claude/skills/video-ingles/scripts/voz.py contenido/<ep>/lineas.tsv` → `audio/NNN.mp3`.
+  Los audios que ya existen no se regeneran: para rehacer uno, bórralo y vuelve a ejecutar.
 - Pausa de repetición: `pausa_entre_escenas` o una escena con silencio
   (`ffmpeg -f lavfi -i anullsrc=r=48000:cl=stereo -t 4 -c:a libmp3lame audio/pausa4.mp3`).
+- 💳 Solo si el usuario quiere voces más naturales y acepta el coste: `vidiq_voiceover_generate`
+  (28 créditos por cada 1000 caracteres, ≈ 500-620 por un vídeo de 25 min).
 
 ### 5. Montaje — gratis
 - Rellena `escenas.json` (ver `plantillas/escenas.ejemplo.json`). `imagen` es opcional: sin ella la escena
@@ -102,7 +105,7 @@ Divide el guion en escenas: una escena = una línea hablada por una sola voz. Gu
 | Qué publicar | yt-plan, yt-viral | — |
 | Volumen de búsqueda | — | keyword_research (5) |
 | Gancho y guion | yt-script | — |
-| Voces | edge-tts (pendiente de probar) | voiceover (28 por cada 1000 caracteres) |
+| Voces | Piper (voz.py) | voiceover (28 por cada 1000 caracteres) |
 | Imágenes | fondo liso con texto | generate_thumbnail con purpose image (22) |
 | Montaje y Shorts | montar_video.py + yt-shorts | — |
 | Título, SEO y capítulos | yt-package, yt-seo, yt-chapters | — |

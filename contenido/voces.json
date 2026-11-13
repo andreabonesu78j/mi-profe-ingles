@@ -1,0 +1,7 @@
+{
+  "narradora":  {"modelo": "es_MX-claude-high", "velocidad": 1.0,  "nota": "Narradora en español (México)"},
+  "en_a":       {"modelo": "en_US-amy-medium",  "velocidad": 1.0,  "nota": "Personaje A, inglés EE. UU., voz femenina"},
+  "en_lenta":   {"modelo": "en_US-amy-medium",  "velocidad": 1.35, "nota": "Personaje A despacio, para repetir"},
+  "en_b":       {"modelo": "en_US-ryan-high",   "velocidad": 1.0,  "nota": "Personaje B, inglés EE. UU., voz masculina"},
+  "en_b_lenta": {"modelo": "en_US-ryan-high",   "velocidad": 1.35, "nota": "Personaje B despacio"}
+}

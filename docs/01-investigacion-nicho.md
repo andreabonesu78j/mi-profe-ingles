@@ -69,6 +69,26 @@ más por anuncio.
 por una persona, voz IA declarada y personajes propios. YouTube penaliza el contenido producido en masa
 sin aportación humana.
 
+## 5b. Lo que más supera la media de su canal (yt-viral, 59 vídeos de 3 canales, 2026-11-13)
+
+| × su mediana | Vistas | Canal | Vídeo |
+|---|---|---|---|
+| 55,8× | 670 K | Best Teacher | Abecedario en inglés rápido, A-Z con pronunciación |
+| 21,0× | 252 K | Best Teacher | 1300 frases muy fáciles en inglés para principiantes |
+| 19,4× | 233 K | Best Teacher | Abecedario en inglés fácil y rápido |
+| 10,7× | 128 K | Best Teacher | 188 frases en inglés lento y fácil |
+| 8,1× | 31 K | Inglés con Lil'kasen | Mejora tu inglés mientras duermes |
+| 7,3× | 87 K | Best Teacher | Inglés desde cero: 777 frases esenciales |
+| 3,1× | 20 K | Inglés Express | 50 frases para una entrevista de trabajo |
+
+**Lo que comparten:** temas de nivel cero (abecedario, primeras frases) y **una cifra grande en el título**
+(1300, 777, 188, 50 frases). Las compilaciones largas para "escuchar mientras duermes" también funcionan.
+Para la lección 1 encaja un vídeo de nivel cero con una cifra concreta, p. ej. "El abecedario en inglés" o
+"100 frases para tu primera semana en EE. UU.".
+
+Los handles de referencia para repetir el análisis: `@best-teacher`, `@inglesconlilkasen21`,
+`@inglesexpress-esp`, `@proactiveenglishpractice`, `@whiteeagle1997`, `@aprendeinglesyespanol`.
+
 ## 6. Siguiente paso
 Paso 2: crear la skill que convierta un tema (p. ej. "En el médico — nivel A2") en guion → voz →
 vídeo → miniatura → título → subida, usando vidIQ y Descript.
