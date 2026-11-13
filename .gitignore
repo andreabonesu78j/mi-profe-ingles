@@ -3,3 +3,4 @@ contenido/**/audio/
 contenido/**/img/
 contenido/**/*.mp4
 contenido/**/*.mp3
+__pycache__/

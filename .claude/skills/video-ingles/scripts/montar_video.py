@@ -7,7 +7,8 @@ Uso:
 Lee las rutas relativas a la carpeta del JSON y escribe en esa misma carpeta:
     video.mp4 (o short.mp4), subtitulos.srt y capitulos.txt
 
-Formato de escenas.json: ver plantillas/escenas.ejemplo.json
+Formato de escenas.json: ver plantillas/escenas.ejemplo.json.
+"imagen" es opcional: sin ella se usa un fondo de color ("fondo", p. ej. "0x1E3A5F").
 """
 import json
 import subprocess
@@ -78,7 +79,11 @@ def main() -> None:
 
     for i, esc in enumerate(cfg["escenas"], 1):
         audio = base / esc["audio"]
-        imagen = base / esc["imagen"]
+        if esc.get("imagen"):
+            entrada = ["-loop", "1", "-i", str(base / esc["imagen"])]
+        else:  # sin imagen: fondo de color liso (gratis)
+            color = esc.get("fondo", cfg.get("fondo", "0x1E3A5F"))
+            entrada = ["-f", "lavfi", "-i", f"color=c={color}:s={ancho}x{alto}:r=30"]
         dur = duracion(audio) + pausa
         filtros = [f"scale={ancho}:{alto}:force_original_aspect_ratio=increase",
                    f"crop={ancho}:{alto}", "setsar=1"]
@@ -94,7 +99,7 @@ def main() -> None:
             filtros.append(drawtext(f, FUENTE_REG, t_es, "yellow", y))
         seg = tmp / f"{i:03}.mp4"
         subprocess.run(
-            ["ffmpeg", "-y", "-v", "error", "-loop", "1", "-i", str(imagen),
+            ["ffmpeg", "-y", "-v", "error", *entrada,
              "-i", str(audio), "-vf", ",".join(filtros),
              "-af", f"apad=pad_dur={pausa}", "-t", f"{dur:.3f}",
              "-r", "30", "-c:v", "libx264", "-preset", "veryfast", "-pix_fmt", "yuv420p",
