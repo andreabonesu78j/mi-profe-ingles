@@ -1,0 +1,25 @@
+{
+  "salida": "presentacion-personajes.mp4",
+  "fps": 24,
+  "personajes_dir": "../_comun/personajes",
+  "planos": [
+    {"fondo": "../_comun/fondos/aula.png",
+     "pizarra": "Lección 1\nTu primera semana en EE. UU.\n100 frases en inglés",
+     "personajes": {"luz": {"x": 1450, "escala": 1.3}},
+     "lineas": [
+       {"habla": "luz", "audio": "audio/p01.mp3", "texto_es": "¡Hola! Soy la Profe Luz."},
+       {"habla": "luz", "audio": "audio/p02.mp3", "texto_es": "Ella es Sofía y él es Mike, su vecino."}]},
+    {"fondo": "../_comun/fondos/pasillo.png",
+     "personajes": {"sofia": {"x": 620, "escala": 1.3}, "mike": {"x": 1300, "escala": 1.3}},
+     "lineas": [
+       {"habla": "mike", "audio": "audio/p03.mp3", "texto_en": "Hi! I'm Mike. I live in 3B.", "texto_es": "¡Hola! Soy Mike. Vivo en el 3B."},
+       {"habla": "sofia", "audio": "audio/p04.mp3", "texto_en": "Nice to meet you, Mike. I'm Sofía. I just moved in.", "texto_es": "Mucho gusto, Mike. Soy Sofía. Me acabo de mudar."},
+       {"habla": "mike", "audio": "audio/p05.mp3", "texto_en": "Welcome to the building!", "texto_es": "¡Bienvenida al edificio!"}]},
+    {"fondo": "../_comun/fondos/aula.png",
+     "pizarra": "Nice to meet you.\n= Mucho gusto.",
+     "personajes": {"luz": {"x": 1300, "escala": 1.2}, "sofia": {"x": 1700, "escala": 1.0, "dy": 30}},
+     "lineas": [
+       {"habla": "luz", "audio": "audio/p06.mp3", "texto_es": "Repite conmigo."},
+       {"habla": "sofia", "audio": "audio/p07.mp3", "texto_en": "Nice to meet you.", "texto_es": "Mucho gusto."}]}
+  ]
+}
