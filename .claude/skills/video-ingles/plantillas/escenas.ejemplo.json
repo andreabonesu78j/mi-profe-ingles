@@ -1,0 +1,29 @@
+{
+  "formato": "landscape",
+  "salida": "video.mp4",
+  "pausa_entre_escenas": 0.6,
+  "musica": null,
+  "volumen_musica": 0.10,
+  "escenas": [
+    {
+      "capitulo": "Introducción",
+      "imagen": "img/portada.png",
+      "audio": "audio/001.mp3",
+      "texto_es": "Hoy aprendes a hablar con el médico en inglés"
+    },
+    {
+      "capitulo": "Frases clave",
+      "imagen": "img/consulta.png",
+      "audio": "audio/002.mp3",
+      "texto_en": "I have an appointment at ten.",
+      "texto_es": "Tengo una cita a las diez."
+    },
+    {
+      "capitulo": "Diálogo completo",
+      "imagen": "img/consulta.png",
+      "audio": "audio/003.mp3",
+      "texto_en": "What seems to be the problem?",
+      "texto_es": "¿Cuál parece ser el problema?"
+    }
+  ]
+}

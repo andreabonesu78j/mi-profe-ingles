@@ -1,0 +1,5 @@
+# Archivos multimedia pesados de los episodios
+contenido/**/audio/
+contenido/**/img/
+contenido/**/*.mp4
+contenido/**/*.mp3
