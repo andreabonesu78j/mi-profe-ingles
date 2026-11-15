@@ -1,8 +1,8 @@
 {
-  "maya":      {"motor": "elevenlabs", "voice_id": "XrExE9yKIg1WjnnlVkGX", "nota": "Miss Maya (candidata: Matilda) — explica en español y modela inglés"},
-  "leo":       {"motor": "elevenlabs", "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "nota": "Leo (candidata: Liam; alternativa Will bIHbv24MWmeRgasZH58o)"},
+  "maya":      {"motor": "elevenlabs", "voice_id": "XrExE9yKIg1WjnnlVkGX", "nota": "Miss Maya (Matilda, elegida) — explica en español y modela inglés"},
+  "leo":       {"motor": "elevenlabs", "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "nota": "Leo (Liam, elegida)"},
   "leo_lenta": {"motor": "elevenlabs", "voice_id": "TX3LPaxmHKxFdv7VOQHJ", "velocidad": 0.8, "nota": "Leo despacio, para repetir"},
-  "mia":       {"motor": "elevenlabs", "voice_id": "cgSgspJ2msm6clMCkdW9", "nota": "Mia (candidata: Jessica; alternativa Laura FGY2WhTYpPnrIDTdsKH5)"},
+  "mia":       {"motor": "elevenlabs", "voice_id": "cgSgspJ2msm6clMCkdW9", "nota": "Mia (Jessica, elegida)"},
   "mia_lenta": {"motor": "elevenlabs", "voice_id": "cgSgspJ2msm6clMCkdW9", "velocidad": 0.8, "nota": "Mia despacio, para repetir"},
   "staff":     {"motor": "elevenlabs", "voice_id": "JBFqnCBsd6RMkjVDRZzb", "nota": "Cajera/banco/chofer, solo voz (provisional: George)"},
   "piper_maya": {"motor": "piper", "modelo": "es_MX-claude-high", "nota": "Respaldo gratis"}

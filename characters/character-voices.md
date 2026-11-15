@@ -3,11 +3,11 @@
 Motor principal: **ElevenLabs** (modelo `eleven_multilingual_v2`, habla español e inglés con la misma voz).
 La clave está guardada en el entorno; el proxy la añade sola. Respaldo gratis: Piper.
 
-| Personaje | Voz ElevenLabs (candidata) | voice_id | Clave en `contenido/voces.json` |
+| Personaje | Voz ElevenLabs | voice_id | Clave en `contenido/voces.json` |
 |---|---|---|---|
-| Miss Maya | Matilda | `XrExE9yKIg1WjnnlVkGX` | `maya` |
-| Leo | Liam (alternativa: Will `bIHbv24MWmeRgasZH58o`) | `TX3LPaxmHKxFdv7VOQHJ` | `leo`, `leo_lenta` |
-| Mia | Jessica (alternativa: Laura `FGY2WhTYpPnrIDTdsKH5`) | `cgSgspJ2msm6clMCkdW9` | `mia`, `mia_lenta` |
+| Miss Maya | **Matilda** ✅ elegida | `XrExE9yKIg1WjnnlVkGX` | `maya` |
+| Leo | **Liam** ✅ elegida | `TX3LPaxmHKxFdv7VOQHJ` | `leo`, `leo_lenta` |
+| Mia | **Jessica** ✅ elegida | `cgSgspJ2msm6clMCkdW9` | `mia`, `mia_lenta` |
 | Personal (cajera, banco, chofer), solo voz | George (provisional) | `JBFqnCBsd6RMkjVDRZzb` | `staff` |
 
 `_lenta` = velocidad 0,8 para la versión de "repite conmigo".
