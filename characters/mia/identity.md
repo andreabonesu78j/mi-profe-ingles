@@ -1,11 +1,11 @@
-# Mia — la estudiante lista
+# Mia — la vecina que ya domina el inglés
 
-**Rol:** entiende rápido, pregunta lo que el público está pensando y ayuda a Leo. Modela las respuestas
-correctas en los diálogos.
+**Rol:** vecina de Leo; latina que lleva unos años en EE. UU. y habla inglés con soltura. Le ayuda, hace de
+compañera en los diálogos y modela las respuestas correctas.
 **Personalidad:** segura, amable, ingeniosa, un poco competitiva con Leo.
 
 ## Identidad (no cambia nunca)
-- Niña de unos 11-12 años, piel morena clara cálida, ojos marrones grandes.
+- Mujer latina de unos 25-28 años (adulta, rostro y cuerpo de adulta), piel morena clara cálida, ojos marrones grandes.
 - Pelo castaño largo y ondulado, por debajo de los hombros.
 - Diadema rosa · pendientes pequeños de estrella dorada.
 
@@ -22,7 +22,10 @@ correctas en los diálogos.
 
 ## Prompt de identidad
 ```
-Mia, a smart and confident 11-year-old girl, light-tan warm skin, big brown eyes, long wavy brown hair
+Mia, a smart and confident Latina woman in her late 20s with adult face and body proportions, light-tan warm skin, big brown eyes, long wavy brown hair
 below the shoulders with a pink headband, small gold star earrings. Open lavender jacket over a white
 t-shirt with a pink star on the chest, wide cuffed blue jeans, pink backpack, pink sneakers with no logos.
 ```
+
+**Importante:** las hojas actuales la muestran como una niña. Hay que regenerarla adulta (mismo estilo, misma
+cara reconocible, misma ropa). Ver `characters/prompts-animacion.md`, sección 0.

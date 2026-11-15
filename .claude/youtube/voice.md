@@ -22,13 +22,15 @@ y después digo la frase en inglés despacio y otra vez a velocidad normal. Anim
 
 ## Lo que no prometo
 - Hablar inglés en X días, ni ningún resultado garantizado.
-- Que soy profesor nativo ni que hay una persona en cámara: el canal es sin cara y las voces son
-  generadas con IA (se avisa en la descripción).
+- Que Miss Maya es una persona real: es un personaje animado y las voces son generadas con IA (se avisa en
+  la descripción).
 - Cifras de alumnos, testimonios o certificaciones que no existan.
 
 ## Mi formato
 - Vídeo largo semanal, 20-40 min: gancho de 30 s sin intro musical, frases clave, diálogo, "tu turno",
   repaso y cierre. Nivel CEFR en el título.
 - 3-5 Shorts por vídeo largo, de 30-60 s, una frase o un mini-diálogo cada uno.
-- Sin cara, sin palabrotas. Ilustraciones de personajes fijos más texto en pantalla
-  (inglés en blanco y traducción en amarillo).
+- Serie de animación 3D con personajes fijos (ver `characters/`): Miss Maya (profesora, explica en español),
+  Leo (recién llegado, aprende) y Mia (su vecina, ya habla inglés). Todos adultos.
+- Inglés americano. Texto en pantalla: inglés en blanco y traducción en amarillo. Sin palabrotas.
+- Voces generadas con IA, avisado en la descripción.
