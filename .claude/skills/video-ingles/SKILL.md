@@ -8,6 +8,10 @@ description: Produce un vídeo del canal sin cara de inglés para hispanohablant
 Convierte un tema (p. ej. "En el médico — A2") en un vídeo listo para publicar.
 Antes de empezar lee `docs/01-investigacion-nicho.md` (nicho y palabras clave) y `.claude/youtube/voice.md`
 (a quién hablamos, cómo hablamos y qué no prometemos).
+Personajes: `characters/master-style.md` (estilo y reglas), `characters/<id>/identity.md` (Miss Maya, Leo,
+Mia: aspecto, vestuario y prompt fijos) y `characters/character-voices.md` (voz de cada uno). Nunca
+inventes ni cambies el aspecto o la voz de un personaje; los assets para animar están en `characters/<id>/anim/`.
+Inglés del canal: americano (EE. UU.).
 
 ## Reglas que no se saltan
 1. **Gratis primero.** Cada paso indica la herramienta gratuita. vidIQ cuesta créditos: úsalo solo en los

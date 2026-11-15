@@ -6,3 +6,4 @@ contenido/**/*.mp3
 __pycache__/
 .cache/
 muestra-*.mp4
+muestra-*.mp3
