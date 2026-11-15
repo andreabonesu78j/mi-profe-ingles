@@ -47,21 +47,19 @@ Inglés del canal: americano (EE. UU.).
 Muestra el guion y pide al usuario que lo revise y corrija. No sigas hasta que lo apruebe; anota quién y
 cuándo en la cabecera.
 
-### 4. Voces — gratis (Piper, sin conexión)
-- La primera vez en una máquina nueva: `bash .claude/skills/video-ingles/scripts/preparar.sh` (instala Piper y
-  yt-dlp y descarga las voces a `.cache/piper/`, ~250 MB).
-- Las voces del canal están en `contenido/voces.json`: `narradora` (español de México), `en_a` / `en_lenta`
-  (inglés EE. UU., femenina) y `en_b` / `en_b_lenta` (masculina). `_lenta` = 35 % más despacio, para repetir.
-  Úsalas siempre: son la "voz" reconocible del canal.
+### 4. Voces — ElevenLabs (respaldo gratis: Piper)
+- Voces fijas por personaje en `contenido/voces.json` y `characters/character-voices.md`. No las cambies.
 - Divide el guion en `lineas.tsv` (`archivo<TAB>voz<TAB>texto`, una línea por frase de una sola voz) y genera:
   `python3 .claude/skills/video-ingles/scripts/voz.py contenido/<ep>/lineas.tsv` → `audio/NNN.mp3`.
-  Los audios que ya existen no se regeneran: para rehacer uno, bórralo y vuelve a ejecutar.
-- Pausa de repetición: `pausa_entre_escenas` o una escena con silencio
+  Los audios que ya existen no se regeneran (no se gastan caracteres dos veces).
+- Antes de generar un episodio completo, cuenta los caracteres de `lineas.tsv` y díselo al usuario.
+- Pausa de repetición: `pausa_entre_escenas` o una escena de silencio
   (`ffmpeg -f lavfi -i anullsrc=r=48000:cl=stereo -t 4 -c:a libmp3lame audio/pausa4.mp3`).
-- 💳 Solo si el usuario quiere voces más naturales y acepta el coste: `vidiq_voiceover_generate`
-  (28 créditos por cada 1000 caracteres, ≈ 500-620 por un vídeo de 25 min).
 
 ### 5. Montaje — gratis
+- Rótulos, contadores, títulos animados, anuncios y Shorts con motion graphics: usa las skills **remotion-***
+  (empieza por `remotion-best-practices`). Licencia de Remotion: revisa `remotion-license` si el canal pasa a
+  ser de una empresa con más de 3 personas.
 - Rellena `escenas.json` (ver `plantillas/escenas.ejemplo.json`). `imagen` es opcional: sin ella la escena
   usa un fondo de color liso con el texto encima, que es gratis y basta para la mayoría de escenas.
 - 💳 Opcional: imágenes de personajes o lugares con `vidiq_generate_thumbnail` (`purpose: "image"`,

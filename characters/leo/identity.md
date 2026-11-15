@@ -26,5 +26,3 @@ dark-brown hair with volume on top. Open royal-blue zip-up hoodie with white dra
 white t-shirt, cuffed blue jeans, dark-gray backpack, blue-and-white sneakers with no logos.
 ```
 
-**Importante:** las hojas actuales lo muestran como un niño. Hay que regenerarlo adulto (mismo estilo, misma
-cara reconocible, misma ropa). Ver `characters/prompts-animacion.md`, sección 0.

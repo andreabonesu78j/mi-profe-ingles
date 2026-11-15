@@ -1,13 +1,21 @@
 # Voces de los personajes (inglés americano)
 
-| Personaje | Idioma | Voz gratis (Piper) | Clave en `contenido/voces.json` |
+Motor principal: **ElevenLabs** (modelo `eleven_multilingual_v2`, habla español e inglés con la misma voz).
+La clave está guardada en el entorno; el proxy la añade sola. Respaldo gratis: Piper.
+
+| Personaje | Voz ElevenLabs (candidata) | voice_id | Clave en `contenido/voces.json` |
 |---|---|---|---|
-| Miss Maya (explica) | español de México | `es_MX-claude-high` | `maya` |
-| Leo | inglés EE. UU. | `en_US-ryan-high` | `leo`, `leo_lenta` |
-| Mia | inglés EE. UU. | `en_US-amy-medium` | `mia`, `mia_lenta` |
-| Personal (cajera, banco, chofer), solo voz | inglés EE. UU. | por elegir: otra voz de Piper distinta | `staff` |
+| Miss Maya | Matilda | `XrExE9yKIg1WjnnlVkGX` | `maya` |
+| Leo | Liam (alternativa: Will `bIHbv24MWmeRgasZH58o`) | `TX3LPaxmHKxFdv7VOQHJ` | `leo`, `leo_lenta` |
+| Mia | Jessica (alternativa: Laura `FGY2WhTYpPnrIDTdsKH5`) | `cgSgspJ2msm6clMCkdW9` | `mia`, `mia_lenta` |
+| Personal (cajera, banco, chofer), solo voz | George (provisional) | `JBFqnCBsd6RMkjVDRZzb` | `staff` |
 
-`_lenta` = 35 % más despacio, para la versión de "repite conmigo".
-Como Leo y Mia son adultos, sus voces no necesitan cambio de tono.
+`_lenta` = velocidad 0,8 para la versión de "repite conmigo".
+Una vez elegidas, **no se cambian**: la voz es parte de la identidad del personaje.
 
-Mantener SIEMPRE la misma voz por personaje: es parte de su identidad.
+## Límites de la clave actual
+- Puede generar audio con las voces estándar de ElevenLabs.
+- No tiene permiso para listar voces (`voices_read`) ni para leer la suscripción.
+- Las voces de la biblioteca de la comunidad piden un plan de pago (la prueba con una devolvió `paid_plan_required`).
+- Revisa el plan: para un canal monetizado hace falta un plan con licencia comercial, y un episodio de
+  25 min son unos 20-25 mil caracteres.

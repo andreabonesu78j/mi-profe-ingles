@@ -27,5 +27,3 @@ below the shoulders with a pink headband, small gold star earrings. Open lavende
 t-shirt with a pink star on the chest, wide cuffed blue jeans, pink backpack, pink sneakers with no logos.
 ```
 
-**Importante:** las hojas actuales la muestran como una niña. Hay que regenerarla adulta (mismo estilo, misma
-cara reconocible, misma ropa). Ver `characters/prompts-animacion.md`, sección 0.
