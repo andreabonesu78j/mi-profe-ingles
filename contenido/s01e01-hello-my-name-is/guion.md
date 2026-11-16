@@ -4,7 +4,7 @@
 - **Escenario:** aula.
 - **Personajes:** Miss Maya · Leo · Mia.
 - **Límite de voz:** ≤ 2.500 caracteres de ElevenLabs (se comprueba con `guion_a_lineas.py`).
-- **Revisado por (persona):** ________ — fecha ________ ← obligatorio antes de generar las voces.
+- **Revisado por (persona):** aprobado por la creadora del canal en el chat — 2026-11-16
 
 **Formato de cada frase:** `EN lenta` → `ES` (Miss Maya) → `EN normal` → 3 s de pausa para repetir.
 

@@ -1,0 +1,498 @@
+{
+ "salida": "episodio-preliminar.mp4",
+ "fps": 24,
+ "personajes_dir": "../../characters/_preview",
+ "planos": [
+  {
+   "fondo": "../../characters/_preview/fondo.png",
+   "personajes": {
+    "maya": {
+     "x": 330,
+     "escala": 1.0
+    },
+    "leo": {
+     "x": 960,
+     "escala": 1.0
+    },
+    "mia": {
+     "x": 1590,
+     "escala": 1.0
+    }
+   },
+   "lineas": [
+    {
+     "habla": "maya",
+     "audio": "audio/0001.mp3",
+     "pausa": 0.5
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0002.mp3",
+     "pausa": 0.5
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0003.mp3",
+     "texto_en": "Hello, my name is Leo.",
+     "texto_es": "Hola, me llamo Leo.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0004.mp3",
+     "texto_en": "Hello, my name is Leo.",
+     "texto_es": "Hola, me llamo Leo.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0005.mp3",
+     "texto_en": "Hello, my name is Leo.",
+     "texto_es": "Hola, me llamo Leo.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0006.mp3",
+     "texto_en": "Nice to meet you.",
+     "texto_es": "Mucho gusto.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0007.mp3",
+     "texto_en": "Nice to meet you.",
+     "texto_es": "Mucho gusto.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0008.mp3",
+     "texto_en": "Nice to meet you.",
+     "texto_es": "Mucho gusto.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0009.mp3",
+     "texto_en": "I'm from Mexico.",
+     "texto_es": "Soy de México.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0010.mp3",
+     "texto_en": "I'm from Mexico.",
+     "texto_es": "Soy de México.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0011.mp3",
+     "texto_en": "I'm from Mexico.",
+     "texto_es": "Soy de México.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0012.mp3",
+     "pausa": 0.5
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0013.mp3",
+     "texto_en": "I just moved here.",
+     "texto_es": "Me acabo de mudar aquí.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0014.mp3",
+     "texto_en": "I just moved here.",
+     "texto_es": "Me acabo de mudar aquí.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0015.mp3",
+     "texto_en": "I just moved here.",
+     "texto_es": "Me acabo de mudar aquí.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0016.mp3",
+     "texto_en": "I'm learning English.",
+     "texto_es": "Estoy aprendiendo inglés.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0017.mp3",
+     "texto_en": "I'm learning English.",
+     "texto_es": "Estoy aprendiendo inglés.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0018.mp3",
+     "texto_en": "I'm learning English.",
+     "texto_es": "Estoy aprendiendo inglés.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0019.mp3",
+     "texto_en": "Sorry, I don't understand.",
+     "texto_es": "Perdón, no entiendo.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0020.mp3",
+     "texto_en": "Sorry, I don't understand.",
+     "texto_es": "Perdón, no entiendo.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0021.mp3",
+     "texto_en": "Sorry, I don't understand.",
+     "texto_es": "Perdón, no entiendo.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0022.mp3",
+     "texto_en": "Can you repeat that, please?",
+     "texto_es": "¿Puede repetirlo, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0023.mp3",
+     "texto_en": "Can you repeat that, please?",
+     "texto_es": "¿Puede repetirlo, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0024.mp3",
+     "texto_en": "Can you repeat that, please?",
+     "texto_es": "¿Puede repetirlo, por favor?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0025.mp3",
+     "pausa": 0.5
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0026.mp3",
+     "texto_en": "Can you speak more slowly, please?",
+     "texto_es": "¿Puede hablar más despacio, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0027.mp3",
+     "texto_en": "Can you speak more slowly, please?",
+     "texto_es": "¿Puede hablar más despacio, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0028.mp3",
+     "texto_en": "Can you speak more slowly, please?",
+     "texto_es": "¿Puede hablar más despacio, por favor?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0029.mp3",
+     "texto_en": "What does that mean?",
+     "texto_es": "¿Qué significa eso?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0030.mp3",
+     "texto_en": "What does that mean?",
+     "texto_es": "¿Qué significa eso?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0031.mp3",
+     "texto_en": "What does that mean?",
+     "texto_es": "¿Qué significa eso?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0032.mp3",
+     "texto_en": "How do you say \"llave\" in English?",
+     "texto_es": "¿Cómo se dice \"llave\" en inglés?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0033.mp3",
+     "texto_en": "How do you say \"llave\" in English?",
+     "texto_es": "¿Cómo se dice \"llave\" en inglés?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0034.mp3",
+     "texto_en": "How do you say \"llave\" in English?",
+     "texto_es": "¿Cómo se dice \"llave\" en inglés?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0035.mp3",
+     "texto_en": "Can you write it down, please?",
+     "texto_es": "¿Me lo puede escribir, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0036.mp3",
+     "texto_en": "Can you write it down, please?",
+     "texto_es": "¿Me lo puede escribir, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0037.mp3",
+     "texto_en": "Can you write it down, please?",
+     "texto_es": "¿Me lo puede escribir, por favor?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0038.mp3",
+     "texto_en": "Excuse me.",
+     "texto_es": "Disculpe.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0039.mp3",
+     "texto_en": "Excuse me.",
+     "texto_es": "Disculpe.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0040.mp3",
+     "texto_en": "Excuse me.",
+     "texto_es": "Disculpe.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0041.mp3",
+     "pausa": 0.5
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0042.mp3",
+     "texto_en": "Thank you so much.",
+     "texto_es": "Muchas gracias.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0043.mp3",
+     "texto_en": "Thank you so much.",
+     "texto_es": "Muchas gracias.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0044.mp3",
+     "texto_en": "Thank you so much.",
+     "texto_es": "Muchas gracias.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "mia",
+     "audio": "audio/0045.mp3",
+     "texto_en": "You're welcome.",
+     "texto_es": "De nada.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0046.mp3",
+     "texto_en": "You're welcome.",
+     "texto_es": "De nada.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "mia",
+     "audio": "audio/0047.mp3",
+     "texto_en": "You're welcome.",
+     "texto_es": "De nada.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "mia",
+     "audio": "audio/0048.mp3",
+     "texto_en": "No problem.",
+     "texto_es": "No hay problema.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0049.mp3",
+     "texto_en": "No problem.",
+     "texto_es": "No hay problema.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "mia",
+     "audio": "audio/0050.mp3",
+     "texto_en": "No problem.",
+     "texto_es": "No hay problema.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0051.mp3",
+     "texto_en": "Can you help me, please?",
+     "texto_es": "¿Me puede ayudar, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0052.mp3",
+     "texto_en": "Can you help me, please?",
+     "texto_es": "¿Me puede ayudar, por favor?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0053.mp3",
+     "texto_en": "Can you help me, please?",
+     "texto_es": "¿Me puede ayudar, por favor?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0054.mp3",
+     "texto_en": "Where is the restroom?",
+     "texto_es": "¿Dónde está el baño?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0055.mp3",
+     "texto_en": "Where is the restroom?",
+     "texto_es": "¿Dónde está el baño?",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0056.mp3",
+     "texto_en": "Where is the restroom?",
+     "texto_es": "¿Dónde está el baño?",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0057.mp3",
+     "texto_en": "I need help.",
+     "texto_es": "Necesito ayuda.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0058.mp3",
+     "texto_en": "I need help.",
+     "texto_es": "Necesito ayuda.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0059.mp3",
+     "texto_en": "I need help.",
+     "texto_es": "Necesito ayuda.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "mia",
+     "audio": "audio/0060.mp3",
+     "texto_en": "Have a nice day!",
+     "texto_es": "¡Que tenga un buen día!",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0061.mp3",
+     "texto_en": "Have a nice day!",
+     "texto_es": "¡Que tenga un buen día!",
+     "pausa": 0.4
+    },
+    {
+     "habla": "mia",
+     "audio": "audio/0062.mp3",
+     "texto_en": "Have a nice day!",
+     "texto_es": "¡Que tenga un buen día!",
+     "pausa": 3.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0063.mp3",
+     "texto_en": "See you later.",
+     "texto_es": "Hasta luego.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0064.mp3",
+     "texto_en": "See you later.",
+     "texto_es": "Hasta luego.",
+     "pausa": 0.4
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0065.mp3",
+     "texto_en": "See you later.",
+     "texto_es": "Hasta luego.",
+     "pausa": 3.0
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0066.mp3",
+     "pausa": 4.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0067.mp3",
+     "pausa": 0.5,
+     "texto_en": "Can you speak more slowly, please?"
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0068.mp3",
+     "pausa": 4.0
+    },
+    {
+     "habla": "leo",
+     "audio": "audio/0069.mp3",
+     "pausa": 0.5,
+     "texto_en": "How do you say … in English?"
+    },
+    {
+     "habla": "maya",
+     "audio": "audio/0070.mp3",
+     "pausa": 0.5
+    }
+   ]
+  }
+ ]
+}

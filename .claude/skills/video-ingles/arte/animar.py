@@ -15,7 +15,7 @@ animacion.json (rutas relativas a su carpeta):
       "pizarra": "Lección 1\\nTu primera semana",      (opcional, solo para el fondo "aula")
       "personajes": {"luz": {"x": 1450, "escala": 1.35}},   x = centro; se apoyan en el borde inferior
       "lineas": [
-        {"habla": "luz", "audio": "audio/001.mp3", "texto_es": "...", "texto_en": "..."}
+        {"habla": "maya", "audio": "audio/0001.mp3", "texto_es": "...", "texto_en": "...", "pausa": 3}
       ]
     }
   ]
@@ -114,8 +114,9 @@ def main() -> None:
                             for i in range(n)])
             ref = np.percentile(rms, 90) or 1.0
             eventos.append({"plano": ip, "ini": t, "fin": t + dur, "linea": linea, "nivel": rms / ref})
-            pistas += [a, np.zeros(int(SR * pausa), dtype=np.int16)]
-            t += dur + pausa
+            pz = float(linea.get("pausa", pausa))
+            pistas += [a, np.zeros(int(SR * pz), dtype=np.int16)]
+            t += dur + pz
     audio = np.concatenate(pistas)
     total = len(audio) / SR
     wav = base / "_animacion_audio.wav"
