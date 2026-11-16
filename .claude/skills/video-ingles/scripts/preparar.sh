@@ -11,3 +11,7 @@ for v in es_MX-claude-high en_US-amy-medium en_US-ryan-high; do
   [ -f "$v.onnx" ] || python3 -m piper.download_voices "$v"
 done
 echo "Listo: voces en $VOCES"
+# Estudio de montaje (Remotion)
+if [ -f "$RAIZ/estudio/package.json" ] && [ ! -d "$RAIZ/estudio/node_modules" ]; then
+  (cd "$RAIZ/estudio" && npm ci --no-audit --no-fund)
+fi

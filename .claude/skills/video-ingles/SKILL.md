@@ -63,20 +63,25 @@ cuándo en la cabecera.
 - Pausa de repetición: `pausa_entre_escenas` o una escena de silencio
   (`ffmpeg -f lavfi -i anullsrc=r=48000:cl=stereo -t 4 -c:a libmp3lame audio/pausa4.mp3`).
 
-### 5. Montaje — gratis
-- Rótulos, contadores, títulos animados, anuncios y Shorts con motion graphics: usa las skills **remotion-***
-  (empieza por `remotion-best-practices`). Licencia de Remotion: revisa `remotion-license` si el canal pasa a
-  ser de una empresa con más de 3 personas.
-- Rellena `escenas.json` (ver `plantillas/escenas.ejemplo.json`). `imagen` es opcional: sin ella la escena
-  usa un fondo de color liso con el texto encima, que es gratis y basta para la mayoría de escenas.
-- 💳 Opcional: imágenes de personajes o lugares con `vidiq_generate_thumbnail` (`purpose: "image"`,
-  22 créditos cada una). Como mucho 2-4 por vídeo y reutilízalas entre episodios (`contenido/_comun/img/`).
-- Monta: `python3 .claude/skills/video-ingles/scripts/montar_video.py contenido/<ep>/escenas.json`
-  → `video.mp4`, `subtitulos.srt` y `capitulos.txt`.
-- Shorts: usa la skill **yt-shorts** sobre `subtitulos.srt` para elegir 3-5 momentos; para cada uno, copia
-  sus escenas a `short-N.json` con `"formato": "vertical"` y `"salida": "short-N.mp4"` (≤ 60 s) y monta.
-- Comprueba: saca 2-3 fotogramas (`ffmpeg -ss <t> -i video.mp4 -frames:v 1 f.png`), míralos y revisa la
-  duración con `ffprobe`.
+### 5. Montaje — Remotion (estudio/), como la competencia
+Ver `docs/04-analisis-competencia-video.md`: una ilustración por frase, cámara en movimiento, cortes, cabecera
+con la frase, mini-test cada 5 frases y sonidos.
+1. **Planos:** escribe `contenido/<ep>/planos.md` (tabla `| Pnn | Momento | Prompt |`, ver el del episodio 01)
+   y pide al usuario que genere las ilustraciones en Google Flow con las hojas de `characters/` como
+   referencia. Se guardan en `contenido/<ep>/planos/Pnn.png`. Las que falten salen como marcador provisional.
+2. **Línea de tiempo:** `python3 .claude/skills/video-ingles/scripts/construir_episodio.py contenido/<ep>`
+   → copia audios e imágenes a `estudio/public/<ep>/` y escribe `episodio.json` (escenas, tiempos, tests).
+   Los mini-tests reutilizan los audios de las frases: no gastan caracteres.
+3. **Vista previa** (opcional): `cd estudio && npx remotion studio`.
+4. **Render:** `cd estudio && npx remotion render Leccion out/<ep>.mp4 --props='{"episodio":"<ep>"}'
+   --browser-executable=/opt/pw-browsers/chromium-1243/chrome-linux64/chrome` (la red de este entorno no deja
+   a Remotion descargar su navegador). ~2 min por cada 50 s de vídeo.
+5. Plantilla visual: `estudio/src/Leccion.tsx` (cabecera, insignia NN/20, etiquetas Despacio/Significa/Repite,
+   barra de pausa, mini-test con cuenta atrás y campanita, título inicial). Usa las skills **remotion-*** para
+   cambiarla. Licencia de Remotion: gratis para equipos de hasta 3 personas.
+- Shorts: usa la skill **yt-shorts** para elegir momentos y renderiza un tramo con `--frames=inicio-fin`
+  en una composición vertical (por crear).
+- Respaldo sin Remotion: `scripts/montar_video.py` (FFmpeg, texto sobre imagen fija).
 
 ### 6. Título, miniatura y descripción — gratis salvo la miniatura
 - Título y texto de la miniatura con la skill **yt-package**: valida con
