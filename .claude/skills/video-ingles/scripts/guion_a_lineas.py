@@ -71,7 +71,14 @@ def main() -> None:
             partes = [m.group(1)]
             while not partes[-1].rstrip().endswith('"') and i + 1 < len(texto):
                 i += 1; partes.append(texto[i].strip())
-            add("maya", " ".join(partes).rstrip('"')); i += 1; continue
+            nota = " ".join(partes).rstrip('"')
+            ref = re.search(r"Después de la (\d+)", l)
+            pos = next((k + 1 for k, f in enumerate(filas) if ref and f[2] == f"#{ref.group(1)} normal"), None)
+            if pos is None:
+                add("maya", nota)
+            else:
+                filas.insert(pos, ("maya", nota.strip(), "nota"))
+            i += 1; continue
         if re.match(r"^\d+(/\d+)? ·", l):
             for num in re.findall(r"\d+", l):
                 if int(num) in frases:

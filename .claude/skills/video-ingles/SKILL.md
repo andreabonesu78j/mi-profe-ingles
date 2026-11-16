@@ -23,6 +23,13 @@ Inglés del canal: americano (EE. UU.).
    imágenes y los MP4 no van a git (`.gitignore`); el guion, `escenas.json` y `publicacion.md` sí.
 5. Los scripts de las skills `yt-*` están en `.claude/skills/yt-*/`: llámalos con esa ruta.
 
+## Serie y límites
+- La temporada está planificada en `docs/03-temporada-01.md`: respeta títulos, orden y personajes.
+- **Cada episodio ≤ 2.500 caracteres de ElevenLabs** y 20 frases. Comprueba con
+  `python3 .claude/skills/video-ingles/scripts/guion_a_lineas.py contenido/<ep>/guion.md` antes de pedir la
+  aprobación; si se pasa, recorta la narración de Miss Maya, nunca las frases.
+- Carpetas de episodio: `contenido/s01eNN-<slug>/`.
+
 ## Flujo
 
 ### 1. Tema — gratis
